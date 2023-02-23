@@ -1,0 +1,6 @@
+# created by virtualenv automatically
+.env
+.idea/
+Lib/
+Scripts/
+__pycache__/
