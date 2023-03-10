@@ -1,7 +1,8 @@
-from settings import API_KEY, BOT_KEY
-import openai, asyncio, logging
-from aiogram import Bot, Dispatcher, types
+import logging
+import openai
+from aiogram import Bot, Dispatcher
 from aiogram.utils import executor
+from settings import API_KEY, BOT_KEY
 
 # Логгирование
 logging.basicConfig(level=logging.INFO)
@@ -39,7 +40,6 @@ async def start(message):
 
 @dp.message_handler(lambda message: True)
 async def handle_message(message):
-
     # id пользователя
     user_id = message.chat.id
 
