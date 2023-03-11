@@ -15,3 +15,20 @@ tg_bot_with_ChatGPT - A simple telegram bot that answers on text questions with 
 ## To start
 
 Start main.py and go ask something your new bot
+
+## Deploy
+
+! If there is no docker/docker-compose on the server, install it. Instructions https://docs.docker.com/
+
+### Creating folder for bot and go in "bot"
+mkdir bot
+cd bot
+
+### Clone the repository to the current folder
+git clone https://github.com/se-andrey/tg_bot_with_ChatGPT.git .
+
+### Creating a file .env for key storage API_KEY=... и BOT_KEY=...
+nano .env
+
+### launch
+docker-compose up -d
